@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "id": "318dcca7-a5f2-4b74-8a0a-5c75c5105197",
+      "field": "filename",
+      "operator": "contains",
+      "valueSource": "value",
+      "value": "titanic"
+    },
+    "and",
+    {
+      "id": "c36a2738-2fd7-443d-aa8d-033ad47a09c7",
+      "field": "file_size",
+      "operator": ">",
+      "valueSource": "value",
+      "value": "1"
+    },
+    "and",
+    {
+      "id": "55029793-6e91-491d-9537-5b7bc73e6a79",
+      "field": "project_id",
+      "operator": "=",
+      "valueSource": "value",
+      "value": "tutorial"
+    },
+    "and",
+    {
+      "id": "06b4d1ba-fed7-42a3-bfe1-db68495a6a06",
+      "field": "file_type",
+      "operator": "=",
+      "valueSource": "value",
+      "value": "csv"
+    },
+    "and",
+    {
+      "id": "050e523c-7604-4581-9b7a-11403ea8c311",
+      "field": "user_id",
+      "operator": "=",
+      "valueSource": "value",
+      "value": "wrong_user"
+    }
+  ],
+  "id": "5ffe2625-5519-410a-86c7-abbb29edee3c"
+}

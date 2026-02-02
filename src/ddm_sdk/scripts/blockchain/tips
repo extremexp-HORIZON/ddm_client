@@ -1,0 +1,44 @@
+
+### Prepare Suite Artifacts from saved suite ""
+
+PS C:\Users\orest\coding\ddm_client> python -m ddm_sdk.scripts.blockchain.prepare_suite_artifacts_from_saved `    
+>>   --project_id "tutorial" `                                                                               
+>>   --suite_id "8828ed62-5c7d-4314-908a-cd5090280220" `
+>>   --network sepolia `
+>>   --requester "0x11B1C48B2f084ff1b5E49eD872bf9A90092A899a" `
+>>   --poll --timeout 600 --interval 1
+
+### Register Suite ""
+python -m ddm_sdk.scripts.blockchain.register_suite --network sepolia --suite_id 8828ed62-5c7d-4314-908a-cd5090280220 --bounty-eth 0.05 --method sig --poll     
+
+### Prepare Suite Artifacts from saved suite ""
+PS C:\Users\orest\coding\ddm_client> python -m ddm_sdk.scripts.blockchain.prepare_suite_artifacts `
+>>   --json-file "C:\Users\orest\Downloads\prepare_suite.json" `                                                  
+>>   --poll --timeout 600 --interval 1
+
+
+## Prepare human validation ""
+ python -m ddm_sdk.scripts.blockchain.prepare_validation `  --json-file ""C:\Users\orest\Downloads\prepare_validation.json"" `  --poll
+
+ python -m ddm_sdk.scripts.blockchain.prepare_dataset_report `
+>>   --network sepolia `                            
+>>   --suite_id 8828ed62-5c7d-4314-908a-cd5090280220 `
+>>   --catalog_id fea3bcdd-e678-41ab-bcaa-e4a163f2bbce `        
+>>   --include-report `
+>>   --poll
+
+
+PS C:\Users\orest\coding\ddm_client> python -m ddm_sdk.scripts.blockchain.register_dataset `
+>>   --network sepolia `                            
+>>   --suite_id 8828ed62-5c7d-4314-908a-cd5090280220 `
+>>   --catalog_id fea3bcdd-e678-41ab-bcaa-e4a163f2bbce `
+>>   --dataset-uri "projects/my_suite/datasets/result/result.csv" `
+>>   --poll
+
+python -m ddm_sdk.scripts.blockchain.prepare_reward `
+  --project_id tutorial `
+  --network sepolia `
+  --suite_id 8828ed62-5c7d-4314-908a-cd5090280220 `
+  --catalog_id fea3bcdd-e678-41ab-bcaa-e4a163f2bbce `
+  --expires-in-sec 900 `
+  --poll --timeout 600 --interval 1

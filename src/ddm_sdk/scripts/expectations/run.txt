@@ -1,0 +1,21 @@
+#### upload_sample ####
+
+ python -m ddm_sdk.scripts.expectations.upload_sample `
+   "C:\Users\orest\Downloads\result.csv" `
+   --suite-name "my_suite12" `
+   --poll
+
+
+####create_suite ####
+
+python -m ddm_sdk.scripts.expectations.create_suite --project_id "tutorial" --json-file "C:\Users\orest\Downloads\suite.json" --poll 
+
+
+
+
+ python -m ddm_sdk.scripts.blockchain.register_dataset `
+>>   --network sepolia `
+>>   --suite_id 8828ed62-5c7d-4314-908a-cd5090280220 `
+>>   --catalog_id fea3bcdd-e678-41ab-bcaa-e4a163f2bbce `
+>>   --dataset-uri "projects/test_file/files/fea3bcdd-e678-41ab-bcaa-e4a163f2bbce/fea3bcdd-e678-41ab-bcaa-e4a163f2bbce.csv" `
+>>   --poll

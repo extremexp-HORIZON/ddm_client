@@ -1,0 +1,7 @@
+{
+  "network": "sepolia",
+  "dataset_fingerprint": "0x33d97df3ba5417c442b1471c84afd395a4e477224b4cc527eac08b43d095e3dc",
+  "uploader": "0x11B1C48B2f084ff1b5E49eD872bf9A90092A899a",
+  "validation_json": { "score": 100 },
+  "include_report": true
+}

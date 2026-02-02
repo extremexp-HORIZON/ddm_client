@@ -1,0 +1,30 @@
+# secrets
+.env
+.env.*
+.env*
+
+
+# runtime / outputs
+out/
+--json-file
+python
+
+# python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# venv
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# python build/metadata
+*.egg-info/
+build/
+dist/
+*.egg-info/
