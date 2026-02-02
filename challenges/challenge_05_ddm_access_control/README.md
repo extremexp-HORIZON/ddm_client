@@ -1,4 +1,4 @@
-# Challenge 05 — DDMM & Access Control
+# Challenge 05 — DDM & Access Control
 
 This folder contains the scripts needed to complete **Challenge 05**.
 
