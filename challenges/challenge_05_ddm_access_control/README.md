@@ -42,8 +42,8 @@ pip install -e ".[dev]"
 Make sure you have a `.env` in the **project root** with at least:
 
 ```env
-DDM_BASE_URL=http://127.0.0.1
-DDM_AUTH_URL=http://127.0.0.1:5521
+DDM_BASE_URL=https://ddm.extremexp-icom.intracom-telecom.com
+DDM_AUTH_URL=https://ddm.extremexp-icom.intracom-telecom.com
 DDM_USERNAME=...
 DDM_PASSWORD=...
 DDM_STORAGE_DIR=out/runtime
