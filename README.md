@@ -1,6 +1,6 @@
-# DDM SDK (Python)
+# ddm_client SDK (Python)
 
-**DDM SDK** is a Python client library for interacting with **DDM** as part of the **ExtremeXP** project.
+**ddm_client SDK** is a Python client library for interacting with **DDM** as part of the **ExtremeXP** project.
 
 This repository is published under:
 
