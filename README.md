@@ -290,7 +290,7 @@ pytest -x
 
 This repository includes two guided challenge/tutorial folders:
 
-- `challenges/challenge_05_dmm_access_control`
+- `challenges/challenge_05_ddm_access_control`
 - `challenges/challenge_08_nft_provenance`
 
 <details>
@@ -298,11 +298,11 @@ This repository includes two guided challenge/tutorial folders:
 
 📁 Folder:
 ```text
-challenges/challenge_05_dmm_access_control
+challenges/challenge_05_ddm_access_control
 ```
 
 📘 Full guide:
-- [Challenge 05 README](./challenges/challenge_05_dmm_access_control/README.md)
+- [Challenge 05 README](./challenges/challenge_05_ddm_access_control/README.md)
 
 </details>
 
