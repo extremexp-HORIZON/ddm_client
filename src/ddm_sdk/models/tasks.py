@@ -8,7 +8,7 @@ class TaskResultResponse(BaseModel):
     """
     GET /ddm/tasks/result/<id>
 
-    Backend returns:
+    DDM returns:
       {
         "ready": bool,
         "successful": bool | null,
@@ -26,10 +26,10 @@ class TaskStatusResponse(BaseModel):
     """
     GET /ddm/tasks/status/<task_id>
 
-    Backend returns one of:
+    DDM returns one of:
       {"state":"PENDING","message":...}
       {"state":"SUCCESS","result": ...}
-      {"state":"FAILURE","error": "..."}  (HTTP 500)
+      {"state":"FAILURE","error": "..."} 
       {"state": <other>, "message": ...}
     """
     model_config = ConfigDict(extra="allow")

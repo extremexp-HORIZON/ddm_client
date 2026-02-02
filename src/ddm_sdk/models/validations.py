@@ -27,7 +27,7 @@ class ValidationResultCreate(BaseModel):
 class ValidationResultResponse(BaseModel):
     """
     GET /ddm/validations/results/{id} or list item.
-    Allow extras because backend can include lots of fields.
+    Allow extras because backend can include more fields.
     """
     model_config = ConfigDict(extra="allow")
 
@@ -55,7 +55,6 @@ class ValidationResultsListResponse(BaseModel):
     """
     model_config = ConfigDict(extra="allow", populate_by_name=True)
 
-    # Some backends may return null for data; tolerate that.
     data: List[ValidationResultResponse] = Field(default_factory=list)
 
     total: int = 0
@@ -63,13 +62,6 @@ class ValidationResultsListResponse(BaseModel):
     page: int = 1
     perPage: int = Field(default=10, validation_alias="perPage")
 
-    # ---- common alternate keys from other backends ----
-    # If your backend ever returns filteredTotal/per_page etc.,
-    # these aliases make it “just work”.
-    # (Pydantic v2: use validation_alias)
-    # You can uncomment if needed:
-    # filtered_total: int = Field(default=0, validation_alias=("filtered_total", "filteredTotal"))
-    # perPage: int = Field(default=10, validation_alias=("perPage", "per_page"))
 
 
 class SaveValidationResultResponse(BaseModel):

@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 class UploaderMetadataJSON(BaseModel):
     """
-    Matches your Swagger model:
+    Matches Swagger model:
       { "uploader_metadata": <any json> }
     """
     model_config = ConfigDict(extra="allow")
@@ -18,12 +18,11 @@ class UploaderMetadataJSON(BaseModel):
 
 class UploaderMetadataResponse(BaseModel):
     """
-    Your handlers return different shapes:
+    Handlers return different shapes:
       - GET:  { "uploader_metadata": {...} }
       - PUT:  { "message": "...", "file_id": "..." }
-      - POST: { "message": "...", "file_id": "..." } (your code returns 201)
+      - POST: { "message": "...", "file_id": "..." } () code returns 201)
       - DELETE:{ "message": "..." }
-    So keep it flexible.
     """
     model_config = ConfigDict(extra="allow")
 

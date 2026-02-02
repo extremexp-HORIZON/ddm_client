@@ -41,9 +41,8 @@ class SuiteTuple(BaseModel):
 class SupportedFileTypesResponse(BaseModel):
     """
     Both supported-file-types endpoints return GROUPED_* constants,
-    likely shaped like:
+    shaped like:
       { "csv": ["csv"], "excel": ["xls","xlsx"], ... }
-    We'll keep it generic.
     """
     model_config = ConfigDict(extra="allow")
     grouped: Dict[str, Any]
