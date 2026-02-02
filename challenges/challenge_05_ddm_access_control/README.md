@@ -287,7 +287,7 @@ out/runtime/projects/tutorial-<username>/files/<file_id>/
 ### 10) Get Catalog
 
 This task will list catalog entries for the project (useful to verify the uploaded files appear in the project catalog).
-> Tip: Fill in project_id as tutorial-<username>.
+> Tip: Fill in project_id as tutorial-username.
 
 ```powershell
 python .\challenges\challenge_05_dmm_access_control\10_catalog_list.py `                                     
