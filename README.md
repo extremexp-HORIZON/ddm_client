@@ -68,7 +68,6 @@ Blockchain scripts/tests interact with smart contracts on **Sepolia**. For that 
 1) **An RPC endpoint** (recommended: **Infura Sepolia**)
 2) **A funded Sepolia account private key** (for signing transactions)
 
-> ⚠️ Never commit real private keys to git. Use a local `.env`.
 
 ### Example `.env`
 
