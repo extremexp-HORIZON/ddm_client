@@ -76,7 +76,6 @@ Blockchain scripts/tests interact with smart contracts on **Sepolia**. For that 
 # --- core ---
 DDM_BASE_URL=https://ddm.extremexp-icom.intracom-telecom.com
 DDM_AUTH_URL=https://ddm.extremexp-icom.intracom-telecom.com
-DDM_TIMEOUT=30
 
 # --- auth ---
 DDM_USERNAME=
