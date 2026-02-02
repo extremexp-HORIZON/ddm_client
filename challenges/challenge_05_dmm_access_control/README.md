@@ -19,7 +19,7 @@ In this challenge you will explore the **core functionalities of Decentralized D
 - **Expectations Suite creation** and **Validations** (Steps **7–8**)
 - **Metadata enrichment with LLM** (column descriptions / enrichment shown in the Expectations UI) (Step **7**)
 
-**B) Access Control**
+**C) Access Control**
 - Understand how DDM links files and actions to a **user identity** 
 - Explore how uploaded datasets are associated with a specific **project_id** and uploader
 
