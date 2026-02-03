@@ -120,7 +120,7 @@ python .\challenges\challenge_05_dmm_access_control\02_attach_metadata.py `
 ### 3) Download DDM generated file metadata for both files
 
 ```powershell
-python .\challenges\challenge_05_dmm_access_control\03_download_file_metadata.py `
+python .\challenges\challenge_05_ddm_access_control\03_download_file_metadata.py `
   --project_id <tutorial-username> `
   --file-id <CSV_FILE_ID> `
   --file-id <PARQUET_FILE_ID>
