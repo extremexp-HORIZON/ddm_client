@@ -82,18 +82,20 @@ Example inputs used in this guide : `sample_files/`
 ### 1) Upload files
 - Upload three files under project_id: tutorial-username
 ```powershell
-python .\challenges\challenge_05_dmm_access_control\01_upload_file.py `
-   --project_id <tutorial-username> `
-   --name "Titanic-Dataset.csv" `
-   --name "Titanic-Large Dataset" `
-   --description "challenge 5 csv upload" `
-   --description "challenge 5 parquet upload" `
-   --use-case "crisis" `
-   --use-case "crisis" `
-   --use-case "crisis" `
-   ".\challenges\sample_files\Titanic-Dataset.csv" `                                
-   ".\challenges\sample_files\titanic.parquet" `  
-   ".\challenges\sample_files\titanic_large"                 
+python .\challenges\challenge_05_ddm_access_control\01_upload_file.py `
+  --project_id "tutorial-<username>" `
+  --name "Titanic-Dataset.csv" `
+  --name "titanic.parquet" `
+  --name "titanic_large.csv" `
+  --description "Challenge 05 CSV upload" `
+  --description "Challenge 05 Parquet upload" `
+  --description "Challenge 05 Large CSV upload" `
+  --use-case "crisis" `
+  --use-case "crisis" `
+  --use-case "crisis" `
+  ".\challenges\sample_files\Titanic-Dataset.csv" `
+  ".\challenges\sample_files\titanic.parquet" `
+  ".\challenges\sample_files\titanic_large.csv"        
 ```
 
 ✅ After upload, **copy the returned `file_id` values** — you will use them in the next steps.
