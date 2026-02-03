@@ -70,6 +70,7 @@ Example inputs used in this guide : `sample_files/`
 - `.\challenges\sample_files\titanic_large.csv`
 - `.\challenges\sample_files\expectations.json`
 - `.\challenges\sample_files\filters.json`
+- `.\challenges\sample_files\uploader_metadata.json`
 
 
 
