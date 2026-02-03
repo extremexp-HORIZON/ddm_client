@@ -273,7 +273,7 @@ python .\challenges\challenge_05_dmm_access_control\08_validate.py `
 ---
 ### 9) Download file
 Use:
-- file_id = the file you want to download (usually the CSV file id from Step 1)
+- file_id = the file you want to download (the Titanic-Dataset CSV file id from Step 1)
 > Tip: Fill in project_id as tutorial-username.
 
 ```powershell
