@@ -100,7 +100,7 @@ python .\challenges\challenge_08_nft_provenance\01_update_profile.py `
 
 ---
 
-### 2) Register suite (on-chain)
+### 2) Registera dataset request (on-chain)
 
 This step prepares and registers an **Expectation Suite** on Sepolia.
 
