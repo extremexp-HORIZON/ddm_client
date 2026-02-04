@@ -154,7 +154,7 @@
         "column": "Embarked",
         "mostly": 0.95,
         "value_set": [
-          "c",
+          "C",
           "Q",
           "S"
         ]
